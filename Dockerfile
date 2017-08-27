@@ -4,7 +4,7 @@ COPY . /app/
 
 WORKDIR /app
 
-RUN npm i && \
+RUN npm install && \
     rm -rf build && \
     npm run build && \
     cp -r build/ /usr/html/ && \
