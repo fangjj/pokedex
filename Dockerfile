@@ -9,7 +9,7 @@ RUN npm i && \
     npm run build
 
 # Add the files
-ADD build/ /usr/html/
+COPY build/* /usr/html/
 
 RUN rm -rf /app
 
